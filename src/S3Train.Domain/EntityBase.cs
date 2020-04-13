@@ -8,8 +8,8 @@ namespace S3Train.Domain
     public abstract class EntityBase
     {
         public string Id { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime? UpdatedDate { get; set; }
-        public bool IsActive { get; set; }
+        public DateTime NgayTao { get; set; }
+        public DateTime? NgayCapNhat { get; set; }
+        public bool TrangThai { get; set; }
     }
 }

@@ -17,8 +17,8 @@ namespace S3Train
         T GetById(string id);
         T Get(Expression<Func<T, bool>> predicate);
         T Get(Expression<Func<T, bool>> predicate, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy);
-        T Add(T item);
-        void Add(List<T> items);
+        T Insert(T item);
+        void Insert(List<T> items);
         T Update(T item);
         T Remove(T item);
         void Remove(Expression<Func<T, bool>> predicate);

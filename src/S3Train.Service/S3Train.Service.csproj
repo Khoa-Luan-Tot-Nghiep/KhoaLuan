@@ -96,11 +96,16 @@
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
     <Compile Include="Contract\IAccountManager.cs" />
-    <Compile Include="Contract\ICategoryService.cs" />
-    <Compile Include="Contract\IProductAdvertisementService.cs" />
-    <Compile Include="Contract\IProductImageService.cs" />
-    <Compile Include="Contract\IProductService.cs" />
+    <Compile Include="Contract\IChiTietMuonTraService.cs" />
+    <Compile Include="Contract\IHopService.cs" />
+    <Compile Include="Contract\IHoSoService.cs" />
+    <Compile Include="Contract\IKeService.cs" />
+    <Compile Include="Contract\IKhoService.cs" />
+    <Compile Include="Contract\ILoaiHoSoService.cs" />
+    <Compile Include="Contract\IMuonTraService.cs" />
+    <Compile Include="Contract\IPhongBanService.cs" />
     <Compile Include="Contract\IRoleService.cs" />
+    <Compile Include="Contract\ITaiLieuVanBanService.cs" />
     <Compile Include="Contract\IUserIdentityService.cs" />
     <Compile Include="Contract\IUserService.cs" />
     <Compile Include="Contract\IValidationService.cs" />
@@ -124,16 +129,20 @@
     </Compile>
     <Compile Include="Model\Role\RoleViewModel.cs" />
     <Compile Include="Model\User\UserViewModel.cs" />
-    <Compile Include="Service\AccountManager.cs" />
-    <Compile Include="Service\CategoryService.cs" />
-    <Compile Include="Service\ProductAdvertisementService.cs" />
-    <Compile Include="Service\ProductImageService.cs" />
-    <Compile Include="Service\ProductService.cs" />
+    <Compile Include="IndentityService\AccountManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service\RoleService.cs" />
-    <Compile Include="Service\UserIdentityService.cs" />
-    <Compile Include="Service\UserService.cs" />
-    <Compile Include="Service\ValidationService.cs" />
+    <Compile Include="IndentityService\RoleService.cs" />
+    <Compile Include="IndentityService\UserIdentityService.cs" />
+    <Compile Include="IndentityService\UserService.cs" />
+    <Compile Include="Services\ChiTietMuonTraService.cs" />
+    <Compile Include="Services\HopService.cs" />
+    <Compile Include="Services\HoSoService.cs" />
+    <Compile Include="Services\KeService.cs" />
+    <Compile Include="Services\KhoService.cs" />
+    <Compile Include="Services\LoaiHoSoService.cs" />
+    <Compile Include="Services\MuonTraService.cs" />
+    <Compile Include="Services\PhongBanService.cs" />
+    <Compile Include="Services\TaiLieuVanBanService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\S3Train.Core\S3Train.Core.csproj">

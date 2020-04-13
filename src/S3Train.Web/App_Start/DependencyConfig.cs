@@ -64,8 +64,6 @@ namespace S3Train.App_Start
             builder.RegisterType<RoleService>().As<IRoleService>();
             builder.RegisterType<UserService>().As<IUserService>();
             builder.RegisterType<UserIdentityService>().As<IUserIdentityService>();
-            builder.RegisterType<ProductService>().AsImplementedInterfaces().InstancePerLifetimeScope();
-            builder.RegisterType<ProductAdvertisementService>().AsImplementedInterfaces().InstancePerLifetimeScope();
         }
     }
 }
